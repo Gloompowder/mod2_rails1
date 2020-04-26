@@ -1,0 +1,4 @@
+<h1> All Shows </h1>
+<% Show.all.map do |t| %>
+<p><%= link_to t.title, show_path(t.id)%></p>
+<% end %>

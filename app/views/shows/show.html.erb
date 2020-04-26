@@ -1,0 +1,7 @@
+<% show = Show.find_by(id: params["id"]) %>
+<h1><%=show.title%></h1>
+    <p>Year: <%= show.year %> </p>
+<p>Explicit: <%= show.explicit %> </p>
+<p>Genre: <%= show.genre %> </p>
+<h2> <%=link_to 'shows', shows_path%> </h2>
+<h2> <%=link_to 'edit', edit_show_path%> </h2>
