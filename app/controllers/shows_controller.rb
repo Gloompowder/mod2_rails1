@@ -26,10 +26,6 @@ class ShowsController < ActionController::Base
         redirect_to show_path(show)
     end 
 
-    # def delete 
-    #     show = Show.find_by
-    # end 
-
     private 
 
     def show_params
