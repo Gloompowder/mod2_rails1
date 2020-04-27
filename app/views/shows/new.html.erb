@@ -1,2 +1,15 @@
-<h1>Add a new Show</h1>
+<h1>Add a new Show!</h1>
 
+<%= form_for @show do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :genre %>
+    <%= f.text_field :genre%>
+
+    <%= f.label :year%>
+    <%= f.number_field :year%>
+
+    <%= f.submit value="Add Show"%>
+    
+<% end %>
