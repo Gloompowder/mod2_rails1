@@ -2,3 +2,6 @@
 <% Show.all.map do |t| %>
 <p><%= link_to t.title, show_path(t.id)%></p>
 <% end %>
+<form method="get" action="/shows/new" class="button_to">
+#      <input value="New" type="submit" />
+#    </form>
